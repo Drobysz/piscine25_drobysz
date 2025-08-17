@@ -51,15 +51,16 @@ int	str_len(char	*str)
 
 void	rush(char *str)
 {
-	int max_view_arr[16];
+	int *max_view_arr;
 
 	if (str_len(*str) != 31)
 	{
 		error();
+		return ;
 	}
 	
-	max_view_arr = decompile_str(*str);
-	
+	*max_view_arr = decompile_str(*str);
+		
 }
 
 int	main(int arc, char **arv)
