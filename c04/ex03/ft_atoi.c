@@ -7,11 +7,7 @@ int	ft_atoi(char *str)
 
 	sign = 1;
 	num = 0;
-	while(*str == '\n'
-		|| *str == '\t'
-		|| *str == '\f'
-		|| *str == '\v'
-		|| *str == '\r'
+	while((*str >= '\t' && *str <= '\r')
 		|| *str == ' ')
 		str++;
 	while(*str == '+' || *str == '-')
@@ -27,6 +23,6 @@ int	ft_atoi(char *str)
 
 int	main(void)
 {
-	printf("%d\n", ft_atoi(" ++-++--++-+-1000000000"));
+	printf("%d\n", ft_atoi(" ++-++--++-+-10ab0"));
 	return (0);
 }
