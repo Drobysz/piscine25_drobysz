@@ -1,6 +1,0 @@
-{
-	"files.associations": {
-		"\\.htaccess$": "apacheconf",
-		"stdio.h": "c"
-	}
-}
